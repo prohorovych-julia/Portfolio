@@ -1,0 +1,69 @@
+
+.icon-panel {
+	padding: 50px 20px 15px 15px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+
+.icon-panel-title {
+	font-family: 'Prata', serif;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 33px;
+	color: var(--white);
+}
+.icon-panel .orange-divider {
+	width: 10%;
+	height: 2px;
+}
+.grey-p-icon-panel {
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25.6px;
+	color: var(--grey);
+}
+.circle-shipping-icon, .circle-payment-icon, .circle-eco-icon, .circle-discount-system-icon {
+	background-color: var(--light-brown);
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	position: relative;
+	transition: .3s;	
+}
+
+.circle-shipping-icon img, .circle-payment-icon img, .circle-eco-icon img, .circle-discount-system-icon img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 40px;
+	height: 40px;
+	transition: .3s;
+	color: var(--orange);
+}
+
+.circle-shipping-icon img:hover, .circle-payment-icon img:hover, .circle-eco-icon img:hover, .circle-discount-system-icon img:hover {
+	transform: translate(-50%, -50%) scale(2.3);
+}
+ 
+ @media (min-width: 600px) {
+	.icon-panel {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 980px) {
+	.icon-panel {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	padding: 10px 20px 10px 20px;
+	margin-bottom: 50px;
+	}
+}
+

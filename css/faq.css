@@ -1,0 +1,105 @@
+
+section .faq {
+	margin-bottom: 10px;
+	padding: 5px 20px 5px 15px;
+}
+
+section .faq-question {
+	font-size: 18px;
+	line-height: 30.6px;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: normal;
+	color: var(--white);
+	text-align: left;
+}
+
+/* Accordion */
+
+.accordion-wrapper {
+	display: flex;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	min-width: 300px;
+	height: 50vh;
+}
+
+.accordion-item {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid;
+	border-bottom-color: var(--gray-bottom);
+}
+
+.accordion-item-title {
+	padding: 10px 0px 10px 5px; 
+	color: var(--white);
+	cursor: pointer;
+	position: relative;
+	font-family: 'Prata', serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 33px;
+}
+
+.accordion-item-title::before {
+	content: "+";
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 5px;
+}
+
+.accordion-item-content {
+	position: relative;
+	background-color:  var(--brown-accordion-content);
+	color: var(--grey);
+	height: 0;
+	overflow: hidden;
+	transition: .5s ease-in-out;
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25.6px;
+}
+
+.accordion-item.active .accordion-item-content {
+	height: 60px;
+}
+
+.accordion-item.active .accordion-item-title::before {
+	content: "-";
+}
+
+
+/* Image */
+section .red-wine-bottle {
+	min-height: 400px;
+}
+section .red-wine-bottle img {
+	width: 100%;
+	display: block;
+}
+
+@media (min-width: 600px) {
+	.faq-questions {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-size: 22px;
+	padding: 10px 10px 10px 10px;
+	}
+	.orange-p {
+		font-size: 28px;
+	}
+	.section-title{
+		font-size: 48px;
+	}
+	section .red-wine-bottle img {
+		margin-right: 20px;
+		margin-bottom: 50px;
+		max-height: 550px;
+		width: auto;
+	}
+}
+

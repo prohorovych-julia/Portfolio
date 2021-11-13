@@ -1,0 +1,42 @@
+
+
+.testimonials {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+@media (min-width: 600px) {
+	.testimonials {
+        font-size: 22px;
+        text-align: center;
+        max-width: 1200px;
+        padding: 30px 15px 30px 15px;
+	}
+.orange-p {
+	font-size: 28px;
+	}
+.section-title {
+	font-size: 48px;
+	}
+.grey-p {
+    font-size: 16px;
+    }
+}
+
+/* Кнопки вперед і назад */
+
+.testimonials .arrow-previous-slide, .testimonials .arrow-next-slide {
+    display: inline-flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+    
+
+
+

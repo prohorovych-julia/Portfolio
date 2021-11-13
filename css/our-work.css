@@ -1,0 +1,982 @@
+:root {
+    font-family: 'Rubik', sans-serif;
+   --header-color:#16121280;
+   --orange:#c8693a;
+   --orange-dark:#7c4021;
+   --white:#fff;
+   --black:#000;
+   --brown:#261E1C;
+   --brown-accordion-content: #261E1C;
+   --light-brown:#3b2e2b;
+   --gray-bottom: #898c8a;             
+   --grey:#898082;
+   --dark-footer:#130F0E;
+   --dark-header:#1a1512;
+   --dark:#1b1613;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a, button {
+    transition: all ease 0.7s;
+}
+
+.scroll-disabled {
+    overflow-y: hidden;
+}
+
+/* Start of Lyuba's section */
+
+.not-21 {
+    padding: 65px 0;
+}
+
+@media (min-width:768px) {
+    .not-21 {
+        padding: 200px 0;
+    }
+} 
+
+.sorry-h1 {
+  font-family: 'Prata', serif;
+  font-size: 58px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+@media (min-width:768px) {
+    .sorry-h1 {
+        font-size: 84px;
+    }
+} 
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        background-color: var(--header-color);
+    }
+}
+
+.header-left {
+    position: relative;
+    z-index: 1;
+}
+
+.header-right {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    background-color: var(--dark-header);
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .header-right {
+        display: flex;
+        position: static;
+        text-align: unset;
+        height: auto;
+        background-color: unset;
+    } 
+}
+
+.header-mobile-controls {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .header-mobile-controls {
+        display: none;
+    }
+}
+
+.burger-line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--white);
+    margin-bottom: 5px;
+}
+
+.close-menu {
+    display: none;
+}
+
+.close-menu .burger-line:first-child {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+}
+
+.close-menu .burger-line:last-child {
+    transform: rotate(-45deg);
+}
+      
+.menu-list {
+    display: block;
+    list-style-type: none;
+    margin: 50px;
+    padding: 36px;
+}
+
+@media (min-width:768px) {
+    .menu-list {
+        display: flex;
+        align-items: center;
+        margin: 11px;
+        padding: 0;
+    }
+}
+
+.menu-list li {
+    padding: 7px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color:var(--white);    
+}
+
+.menu-list a:hover {
+    color:var(--orange);    
+}
+
+.social-icons-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons-list li {
+    margin: 6px;
+}
+
+@media (min-width:768px) {
+    .social-icons-list li {
+        margin: 0 0 0 20px;
+    }
+}
+
+.social-icons-list a {
+    width: 26px;
+    height: 26px;
+    display: block;
+    border: 1px solid var(--orange);
+}
+
+.section-title {
+    font-family: 'Prata', serif;
+    color:var(--white); 
+    font-size: 41px;
+}
+
+.special {
+    color: var(--white);
+    font-family: 'Prata';
+    font-size: 16px;
+}
+
+@media (min-width:468px) {
+    .special {
+        font-size: 48px;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@media (min-width:468px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+.orange-p {
+	font-family: 'Great Vibes', undefined;
+	font-size: 28px;
+	line-height: 39.2px;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: normal;
+	color: var(--orange);
+}
+
+.white-p {
+	font-family: 'Rubik', sans-serif;
+	font-size: 18px;
+	line-height: 30.6px;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: normal;
+	color:var(--white);
+}
+
+.grey-p {
+    font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	line-height: 25.6px;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: normal;
+	color: #898c8a;
+}
+
+body {
+    background-color: var(--brown);
+    margin: 0;
+
+}
+.orange-divider {
+    width: 45px;
+    height: 2px;
+    background-color:var(--orange) ;
+}
+
+.boutique-wines{
+    background-image: url(../image/bg-boutique-wine.jpg);
+    padding: 130px 24px;
+    color:var(--white);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+    .boutique-wines {
+        padding: 200px 20px 200px 44%;
+    }   
+}
+
+.boutique-wines h1 {
+    font-size: 58px;
+    line-height: 1.2;
+    font-family: Prata,serif;
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+    .boutique-wines h1 {
+        font-size: 84px;
+    } 
+}
+
+.button-wrapper{
+    margin: 10px 0;
+}
+
+.default-button {
+    display: inline-block;
+    font-family:'Rubic',sans-serif;
+    padding: 14px 20px;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 1em;
+    margin-right: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .default-button {
+        padding: 18px 26px;
+        font-size: 16.5px;
+    }
+}
+
+.shop-now {
+    background-color:var(--orange);
+    color: var(--white);
+    border: 0.1em solid var(--orange);
+}
+
+.shop-now:hover {
+    background-color:var(--orange-dark);
+    border-color:var(--orange-dark) ;
+  }
+
+.learn-more {
+    background-color: transparent;
+    color: var(--white);
+    border: 0.1em solid var(--white);
+}
+
+.learn-more:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.more-arrow {
+    display: flex;
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.more-arrow img {
+    margin-left: 5px;
+}
+
+.articles-wrapper {
+   padding: 120px 0px 60px;
+}
+
+@media (min-width: 768px) {
+    .articles-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.wine-article {
+    background-size: cover;
+    margin: 30px 25px  0;
+    padding: 300px 45px 45px;
+}
+
+@media (min-width: 768px) {
+    .wine-article  {
+        width: 31.5%;
+    }
+}
+
+.wine-article--special {
+    background-image: url(../image/special-events.jpg);  
+}
+
+.wine-article--oraganic {
+    background-image: url(../image/organic-wine.jpg);
+}
+
+.wine-article--grape {
+    background-image: url(../image/grape-varieties.jpg);
+}
+
+.orange-line {
+    color: var(--orange);
+}
+
+.features-wrapper {
+    margin-top: 50px;
+}
+@media (min-width:768px) {
+    .features-wrapper {
+        display: flex;
+    }
+}
+
+.feature-img {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .feature-img {
+      max-width: 327px; 
+      height: fit-content;
+    }
+}
+
+.features-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 100%;
+    padding: 10px 50px;
+}
+
+@media (min-width:768px) {
+    .feature-item {
+        width: 50%;
+    }
+}
+
+.feature-item-title {
+    color: var(--white);
+    font-family: 'Prata', serif;
+    font-size: 22px;
+}
+
+.section-center {
+    text-align:center;
+
+}
+
+.discover-our-wines {
+    background-image: url(../image/bg-discover-our-wines.jpg);
+    padding: 130px 24px;
+    color:var(--white);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px 0;
+    background-attachment: fixed;
+}
+
+.discover {
+    font-size: 58px;
+    color: var(--white);
+    font-family: 'Prata', serif;
+}
+/*End of Lyuba's section  */
+
+/*Mari code start*/
+
+.best-deals {
+    text-align: center;
+    overflow-wrap:break-word;
+}
+
+.every-tabl {
+    font-size: 36px;
+    text-align: center;
+    font-family:'Prata' ,sans-serif;
+    color:var(--white);
+}
+.loza-img {
+    line-height: 25.6px;
+    text-align: center;
+}
+.block-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.style-carousel {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    box-sizing: border-box;
+    line-height: 25.6px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    align-items: center;
+    max-width: 100%;
+    ;
+}
+.carousel-wine{
+    height: 325px;
+    width: 325px;
+
+}
+.carousel{
+    margin: 30px 0 0 ;
+    padding: 0 15px;
+}
+@media(min-width: 768px) {
+
+    .botels-of-wine{
+        display: flex;
+        padding: 110px 0;
+    }
+    .carousel-wine{
+        height: 270px;
+        width: 270px;
+
+    }
+}
+
+.buttom-add-cart {
+    padding:  10px 30px;
+    margin: 0px 50px;
+    border: 0px solid white;
+    border-radius: 2px;
+    background-color:#c8693a;
+    font-size: 15px;
+   }
+.info-block {
+    text-align: center;
+    overflow-wrap:break-word;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.foto {
+    object-position: 50% 50%;
+    padding: 24px;
+    
+}
+.foto-stend {
+    object-fit: contain;
+    min-width :327px;
+    min-height: 149.234px;
+    border-radius: inherit;
+    display: block;
+    max-width: 100%;
+}
+
+.title-number {
+    color: var(--orange);
+    font-size: 14px;
+    font-family: Rubik ,sans-serif;
+    text-align: left;
+}
+.orange-line {
+    padding: 15px  0;
+}
+
+.story-wine {
+    text-align: left;
+    overflow-wrap:break-word;
+    margin: -50px -15px 0;
+    padding: 50px;
+    letter-spacing:normal;
+}
+
+@media(min-width: 768px) {
+    .story-wine {
+        display: flex;
+    }
+}
+
+@media(min-width: 768px) {
+    .story-wine {
+        margin: 30px 0 0 ;
+        padding: 5px;
+        line-height: 25.6px;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        letter-spacing:normal;
+    }
+}
+    
+.tradition-block {
+    background-image: url(../image/soave-white.jpg);
+    background-position: right;
+    background-size: cover;
+    min-width: 360px;
+    color: var(--white);
+    text-decoration: none;
+    overflow-wrap:break-word;
+    letter-spacing:normal;  
+}
+.trad{
+    margin: 30px 25px;
+}
+@media(min-width: 768px) {
+    .tradition-block{
+    padding: 10px 100px 0 30px;   
+    max-width: 1990px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    .trad {
+    padding: 0 0 0 400px;
+    margin: 0 0 ;
+    text-align: left;
+    display: block;
+    margin-block: inherit;
+    margin: 0 500px;
+
+    }
+    .type-wine {
+    text-align: left;
+    }
+}
+.orange-time{
+    margin-bottom: 0;
+}
+span.line {
+    color: var(--orange);
+} 
+
+.traditional-wine-h2 {
+    font-size: 37px;
+    color: var(--white);
+    text-align: center;
+    font-family: 'Prata', serif;
+    text-transform: none;
+    text-align: left;
+    margin-top: 0;
+}
+
+.style-block-h4 {
+    font-family: 'Prata', serif;
+    line-height: 33px;
+    font-size: 22px;
+    letter-spacing: -0.44px;
+    font-weight: 400;
+    vertical-align: baseline;
+    color: var(--white);
+}
+
+.text-grey {
+    color: rgb(137,128,130);
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+.text-name {
+    text-align: left;
+    font-stretch: normal;
+    font-weight: 400;
+}
+
+@media(min-width: 768px) {
+    .traditional-wine-h2 {
+        font-size: 40px;
+    }
+    .loza-trad {
+        height: 45px;
+        font-size: 16px;
+    }
+    .p-trad {
+        font-family: 'Rubik ' , sans-serif;
+        font-size: 18px;
+        flex-direction: column;
+        
+    }
+    .grey-wine {
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+.history .container {                
+       position: absolute;
+}
+
+@media (min-width:768px) {
+.history .container {                
+    position: relative;
+    }
+}
+
+.history-block {
+    width: 100%; 
+}
+
+@media (min-width:768px) {
+    .history-block {
+        width: 33.33%;
+        margin: 0;
+        padding: 0 24px;
+        border: 0;
+    }
+}
+
+.play-video {
+    padding-top: 20px;
+}
+
+@media (min-width:768px) {
+    .play-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+}
+
+.back {
+    background-image: url(../image/bootle-glass.png);
+    background-size: cover;
+    background-attachment: fixed;
+    /* min-height: 600px;   */
+}
+
+.vino-veritas-h2 {
+    font-size: 58px;
+    font-family:'Prata', sans-serif;
+    text-align: left ; 
+    color: var(--white);
+    margin: 0;
+    text-transform: none;
+    vertical-align :baseline;
+}
+
+.p-orang-style {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 0;
+    
+}
+
+.loza-img-2 {
+    height: 32px;
+    font-size: 16px;
+    object-fit: contain;
+    text-align: left;
+}
+
+.p-history {
+    overflow-wrap: break-word;
+    font-family: Rubik,sans-serif;
+    word-wrap: break-word;
+
+}
+
+.button-style {
+    font-weight: bold;
+}
+
+.history {
+    margin: 0;
+    padding: 20px;
+    background-image: url(../image/bootle-glass.png);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 600px; 
+}
+
+.img-button {
+    height:50px ;
+    font-weight:400;
+    font-size:16px;
+    box-sizing :border-box;
+    color:var(--orange);  
+}
+.button{
+    font-weight: bolder;
+}
+@media(min-wigth:768px) {
+    .p-history{
+        font-stretch: normal;
+        padding: 165px 0;
+        display: flex;
+        font-size: 16px;
+        text-transform: none;
+    }
+    .history-block{
+        padding: 20px 10px 10px 500px ;
+        text-align: center;
+        
+    }
+    .play-video{
+        
+        text-align: right;
+    }  
+
+}
+/*end mari code*/
+
+/* Start block Lyuba  */
+.modal-age .special {
+    font-weight: 400;
+    font-size: 34px;
+}
+
+@media (min-width:768px) {
+    .modal-age .special {
+        font-size: 48px;
+    }
+}
+
+.button.default-button {
+    cursor: pointer;
+}
+
+.modal-age-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--header-color);
+    padding: 0 20px;
+}
+
+.modal-age {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: var(--brown);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width:768px) {
+    .modal-age  {
+        max-width: 670px;
+        padding: 80px 20px;
+    }
+}
+/* End block Lyuba  */
+
+/* Start block footer Lyuba  */
+footer {
+    text-align: center;
+    background-color:var(--dark);
+}
+@media (min-width:768px) {
+    footer {
+        text-align: left;
+    }
+}
+
+.footer-title{
+    font-family: 'Prata', serif;
+    font-size: 22px;
+    color: var(--white);
+    font-weight: 400;
+    margin-top: 0;
+    padding: 5px;
+}
+
+footer .orange-divider {
+    margin: 0 auto;
+    width: 47px;
+    height: 2px;
+    
+}
+
+@media (min-width:768px) {
+    .footer .orange-divider {
+       margin: 0;
+    }
+}
+
+.grey-footer-p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: var(--grey);
+    font-weight: 600;
+}
+
+.grey-footer-p:hover {
+    color: var(--orange);
+}
+
+@media (min-width:768px) {
+    .grey-footer-p {
+        font-size: 14px;
+    }
+}
+.footer-row {
+    margin: 0 -15px; 
+ }
+
+ @media (min-width:768px) {
+    .footer-row {
+        display: flex;
+        flex-wrap: wrap;  
+     }
+ }
+
+ .footer-col {
+    width:100%;
+    padding: 0 15px;
+}
+
+ @media (min-width:768px) {
+    .footer-col {
+        width:25%;
+    }
+}
+
+.footer-col:first-child .grey-footer-p {
+    font-weight: 400;
+}
+
+.footer-col:first-child .grey-footer-p:hover {
+    color: var(--grey);
+}
+
+.footer-col .social-icons-list {
+    display: flex;
+    justify-content:center;
+}
+
+@media (min-width:768px){
+    .footer-col .social-icons-list {
+     justify-content:flex-start;
+    }
+    .footer-col .social-icons-list li {
+        margin: 0 15px 0 0;
+    }
+}
+.footer-col .social-icons-list a {
+    width: 32px;
+    height: 32px;
+}
+
+.menu-list-footer {
+    list-style-type: none;
+    line-height: 2.5;
+    padding-left: 0; 
+}
+
+.footer-images {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 28px -5px;
+}
+
+.footer-images-item {
+    width: 50%;
+    padding: 0 5px;
+    margin-bottom: 7px;
+}
+
+@media (min-width:768px) {
+    .footer-images-item {
+        width: 33%;
+    }
+}
+
+.footer-images-item img {
+    width: 100%;
+    transition: all ease 0.3s;
+}
+
+.footer-images-item img:hover {
+    transform: scale(1.1);
+}
+
+.footer-down {
+    background-color: var(--dark-footer);
+    font-size: 14px;
+    color: white;
+    padding: 9px 0;
+}
+
+.footer-down-text {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-down .container {
+    display: flex;
+    justify-content: space-between;
+} 
+    
