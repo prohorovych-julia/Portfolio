@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:wght@300&display=swap');
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:root {
+	font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.orange-p {
+	font-family: 'Great Vibes', monospace;
+	font-size: 14px;
+	line-height: 39.2px;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: normal;
+	color: rgb(200, 105, 58);
+}
+.white-p {
+	font-family: 'Rubik', sans-serif;
+	font-size: 18px;
+	line-height: 30.6px;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: normal;
+	color: #fff;
+}
+.grey-p {
+	font-family: Rubik, sans-serif;
+	font-size: 16px;
+	line-height: 25.6px;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: normal;
+	color: #898c8a;
+}
+.section-title {
+	font-family: 'Prata', serif;
+	font-size: 34px;
+	font-weight: 400;
+}
+
+.orange-divider {
+    width: 5%;
+    height: 2px;
+    background-color: #c8693a; 
+}
+
+
+/* Newsletter form */
+
+section .newsletter {
+  /* display: flex;
+  flex-direction: row; */
+}
+.newsletter-form form {
+  display: flex;
+  flex-direction: block;
+
+}
+
+.newsletter-form input, .newsletter-form button {
+  font-size: 100%;
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+.newsletter-form input {
+  display: block;
+  margin-top: 12px;
+  text-align: start;
+  text-overflow: ellipsis;
+  margin: 0em;
+  margin-bottom: 24px;
+  padding: 16px 25px;
+  border-color: #f2efe9;
+  background-color: rgba(73, 73, 73, 0.24);
+  font-size: 15px;
+  border-radius: 2px;
+  color: inherit;
+  line-height: 1.2;
+  cursor: text;
+}
+.newsletter-form button {
+  box-shadow: 0 0 0 0 transparent;
+  background-color: #c8693a;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  background-position: 50%;
+  overflow: visible;
+  margin-top: 24px;
+  padding: 16px 25px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+@media (max-width: 767px)
+.newsletter-form button {
+    font-size: 15px;
+    line-height: 1em;
+    letter-spacing: 0;
+   
+
+div .newsletter-form {
+	min-height: 400px;
+	margin: 10px;
+	padding: 90px 0px 15px 0px;
+  display: block;
+  position: relative;
+  line-height: 1.6;
+  font-weight: 400;
+  min-width: 320px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.newsletter-title .orange-p {
+		font-family: 'Great Vibes', undefined;
+		font-size: 14px;
+		font-weight: 400px;
+		line-height: 19.6px;
+		}
+
+	h2 .newsletter-header {
+		font-family: 'Prata', serif;
+		font-size: 28px;
+		font-weight: 400px;
+		line-height: 36.5px;
+		color: #fff;
+		}
+
+	.white-p {
+		font-family: 'Rubik', sans-serif;
+		font-size: 16px;
+		font-weight: 400px;
+		line-height: 25.6px;
+
+	}
+
+@media (min-width: 600px) {
+  .newsletter {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5px;
+	}
+}
+.newsletter-form {
+	font-family: 'Rubik, sans-serif';
+	font-size: 15px;
+	line-height: 18px;
+	
+}
+.newsletter-form .submit {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	background: #c8693a;
+	color: inherit;
+	border-radius: 2px;
+    cursor: pointer;
+}

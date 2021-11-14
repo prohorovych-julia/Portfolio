@@ -1,5 +1,4 @@
 
-// let accordions;
 const accordionWrapper = document.querySelector('.accordion-wrapper');
 
 const faqData = [
@@ -34,7 +33,7 @@ const createTemplate = item => {
 	return `<div class="accordion-item">
 			<div class="accordion-item-title">${item.title}</div>
 			<div class="accordion-item-content">${item.content}</div>
-		</div>`;
+			</div>`;
 }
 
 const fillHtmlList = () => {
