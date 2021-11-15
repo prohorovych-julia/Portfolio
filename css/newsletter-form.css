@@ -40,7 +40,11 @@
 	font-weight: 400;
 	text-align: left;
 }
-  
+.newsletter-form {
+	display: flex;
+	flex-direction: column;
+}
+
 .newsletter-wrapper .form-item {
 	margin: 0px 0px 25px 0px;
 }
